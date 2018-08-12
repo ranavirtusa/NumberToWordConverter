@@ -4,15 +4,15 @@ import static org.junit.Assert.assertEquals;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import com.virtusa.app.exception.InputRangeException;
-import com.virtusa.app.service.Service;
+import com.virtusa.app.service.ServiceImpl;
 
 public class ServiceTest {
 	
-	private static Service service = new Service();
+	private static ServiceImpl service = new ServiceImpl();
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-		service = new Service();
+		service = new ServiceImpl();
 	}
 	
 	@Test

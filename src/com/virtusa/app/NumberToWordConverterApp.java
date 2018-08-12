@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import com.virtusa.app.exception.InputRangeException;
 import com.virtusa.app.service.Service;
+import com.virtusa.app.service.ServiceImpl;
 
 public class NumberToWordConverterApp {
 
@@ -11,7 +12,7 @@ public class NumberToWordConverterApp {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter a number : ");
 		String input = scanner.nextLine();
-		Service service = new Service();
+		Service service = new ServiceImpl();
 		String output;
 		try{
 			output = service.convertorService(input);

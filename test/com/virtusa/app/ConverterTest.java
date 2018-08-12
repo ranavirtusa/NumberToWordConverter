@@ -4,16 +4,16 @@ import static org.junit.Assert.*;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.virtusa.app.converter.Converter;
+import com.virtusa.app.converter.ConverterImpl;
 
 public class ConverterTest {
 	
 	
-	private static Converter converter;
+	private static ConverterImpl converter;
 	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-		converter = new Converter();
+		converter = new ConverterImpl();
 	}
 
 	@Test
