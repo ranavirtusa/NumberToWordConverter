@@ -14,16 +14,14 @@ public class NumberToWordConverterApp {
 		String input = scanner.nextLine();
 		Service service = new ServiceImpl();
 		String output;
-		try{
+		try {
 			output = service.convertorService(input);
+		} catch (InputRangeException e) {
+			output = e.getMessage();
+		} catch (NumberFormatException e) {
+			output = "You entered an Invalid Integer Number or out of integer Range";
 		}
-		catch (InputRangeException e) {
-			output =  e.getMessage();
-		}
-		catch (NumberFormatException e) {
-			output =  "You entered an Invalid Integer Number or out of integer Range";
-		}
-		
+
 		System.out.println(output);
 		scanner.close();
 	}

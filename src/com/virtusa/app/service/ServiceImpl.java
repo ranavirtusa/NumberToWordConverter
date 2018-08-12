@@ -4,10 +4,10 @@ import com.virtusa.app.converter.Converter;
 import com.virtusa.app.converter.ConverterImpl;
 import com.virtusa.app.exception.InputRangeException;
 
-public class ServiceImpl implements Service{
+public class ServiceImpl implements Service {
 
 	public String convertorService(String input) throws InputRangeException {
-		
+
 		int inputNumber;
 		try {
 			inputNumber = Integer.parseInt(input);
@@ -21,7 +21,7 @@ public class ServiceImpl implements Service{
 			String s1 = converter.convert(inputNumber);
 			return s1;
 		}
-		
+
 	}
 
 }
